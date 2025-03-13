@@ -1,0 +1,9 @@
+import config_securite
+
+# Test avec un site autorisé
+site_test_1 = "https://www.google.com"
+print(f"Test avec {site_test_1} (autorisé) : {config_securite.verifier_securite('ouvrir', site_test_1)}")
+
+# Test avec un site non autorisé
+site_test_2 = "https://www.siteinconnu.com"
+print(f"Test avec {site_test_2} (non autorisé) : {config_securite.verifier_securite('ouvrir', site_test_2)}")
